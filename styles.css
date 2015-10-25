@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+img, object, embed, video {
+	max-width: 100%;
+}
+
+.ie6 img {
+	width:100%;
+}
+
+html {
+	height:100%;
+}
+body {
+	height:100%;
+}
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+	background-color: rgba(255,255,255,0.9);
+	min-height:100%;
+}
+
+#header1 {
+	float: left;
+	font-size: 3em;
+	clear: none;
+	margin-top: 2%;
+/*	background-color:#C6F9E7;*/
+}
+
+#logo {
+	width: 60%;
+	float: left;
+	clear: left;
+/*	background-color:#ACA6A6;*/
+}
+
+#telephone {
+	width: 99%;
+	float: right;
+	clear: both;
+	text-align: right;
+	display: none;/*	background-color:#E9D2D2;*/
+}
+#nav_container_main {
+    width: 100%;
+    margin-top:1%;
+/*	background-color:#A4BDCD;*/
+}
+#menu_top {
+    width: 100%;
+    margin-left: 0;
+/*	background-color:#E9B1EB;*/
+}
+.menu_item {
+	margin-left: 0;
+	float: left;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	color: #000;
+	overflow: hidden;
+	clear: none;
+	border-radius: 2px;
+	background-color: white;
+	background-image: linear-gradient(180deg,rgba(245,245,245,1.00) 0%,rgba(200,200,200,1.00) 100%);
+	height: 2em;
+	text-align: left;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.50);
+	line-height:2em;
+	opacity:1;
+	margin-top:1%;
+}
+
+.menu_item:hover {
+	background-image: linear-gradient(180deg,rgba(225,225,225,1.00) 0%,rgba(170,170,170,1.00) 100%);
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+	opacity:1;
+}
+
+.menu_item a{
+    display:block;
+	text-decoration:none;
+	color:rgba(75,75,75,1.00);
+	text-shadow:1px 1px 1px white;
+}
+
+.menu_item a:visited{
+	color:rgba(75,75,75,1.00);
+}
+
+.menu_item a:hover{
+	color:rgba(28,28,28,1.00);
+}
+
+.menu_item a:focus{
+	a:focus outline: thin dotted; 
+}
+
+#nav_container_services {
+	display:none;
+/*	background-color:#A8CB9C;*/
+}
+#content {
+	width: 100%;
+	float: right;
+	clear: none;
+	text-indent: 2em;
+	margin-top:1%;
+	text-align: justify;
+}
+
+#footer1 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+	background-color: rgba(255,255,255,0.9);
+	height:2em;;
+}
+#footer_addr {
+	display:none;
+/*	background-color:#8FA6AB;*/
+}
+#footer_tel {
+	display:none;
+/*	background-color:#AC9C9C;*/
+}
+#footer_copyright {
+/*	background-color:#A6A77D;*/
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout.
+ */
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	margin-left: auto;
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	visibility: visible;
+}
+#header1 {
+	margin-top: 2%;
+	width: 70%;
+	float: left;
+	font-size: xx-large;
+	clear: none;
+	text-indent: 5%;
+}
+.fluid {
+}
+#telephone {
+	margin-top: 2%;
+	width: 28%;
+	float: right;
+	clear: none;
+	text-align: right;
+}
+#nav_container_main {
+	margin-top:1%;
+	width: 100%;
+}
+#menu_top {
+width: 100%;
+margin-left: 0;
+}
+.menu_item {
+	width:50%;
+	clear:none;
+	height:2em;
+	line-height:2em;
+}
+#nav_container_services {
+	margin-top: 1%;
+	width: 0%;
+	clear: none;
+	visibility: visible;
+}
+#menu_services {
+width: 100%;
+margin-left: 0;
+}
+#services_menu_item {
+	width:100%;
+	line-height:2em;
+	height:2em;
+	margin-top:4px;
+}
+#content {
+	width: 100%;
+}
+#logo {
+	margin-top:1%;
+	width:100%;
+}
+#footer1 {
+	margin-left: auto;
+    width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	height:2em;
+}
+#footer_addr {
+	width: 60%;
+	clear: none;
+}
+#footer_tel {
+	width:40%;
+	float:right;
+	clear:none;
+}
+#footer_copyright {
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 1024px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	background-repeat: repeat-y;
+}
+#header1 {
+	margin-top: 1%;
+	width: 70%;
+	float: left;
+	font-size: xx-large;
+	clear: both;
+	text-indent: 5%;
+	font-style: normal;
+}
+.fluid {
+}
+#telephone {
+	margin-top: 1%;
+	width: 30%;
+	float: left;
+	clear: none;
+	text-align: right;
+	display:block;
+}
+#nav_container_main {
+	margin-top:1%;
+	width: 100%;
+}
+#menu_top {
+width: 100%;
+}
+.menu_item {
+	width:20%;
+	height:3em;
+	line-height:3em;
+}
+#nav_container_services {
+	margin-top: 1%;
+	width: 20%;
+	clear: none;
+	display: block;
+}
+#menu_services {
+width: 100%;
+margin-left: 0;
+}
+#services_menu_item {
+	width:100%;
+	clear:none;
+	margin-left: 0;
+}
+#content {
+	margin-bottom: 2em;
+	width:78%;
+	margin-left:1%;
+}
+#logo {
+	margin-top:1%;
+	width:100%;
+}
+#footer1 {
+	width: 88.5%;
+	max-width: 1024px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	background-repeat: repeat-y;
+	display:block;
+	height:8em;
+}
+#footer_addr {
+	width: 60%;
+	clear: both;
+	display:block;
+}
+#footer_tel {
+	width:40%;
+	float:left;
+	clear:none;
+	display:block;
+}
+#footer_copyright {
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
